@@ -14,7 +14,7 @@
     "start": "nodemon -L server.js",
     "debug": "nodemon --inspect=0.0.0.0:9229 -L server.js",
     "test-local": "env-cmd .env-test mocha --compilers js:babel-register --require babel-polyfill",
-    "test": "yarn waitfor:rabbitmq && env-cmd -f .env-test mocha \"./{,!(node_modules)/**}/*.test.js\" --recursive --exit",
+    "test": "env-cmd -f .env-test mocha \"./{,!(node_modules)/**}/*.test.js\" --recursive --exit",
     "lint": "eslint .",
     "waitfor:rabbitmq": "./wait-for rabbitmq:5672 --timeout=180 -- echo RabbitMQ UP",
     "heroku-postbuild": "yarn migrate",
@@ -24,7 +24,16 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "express": "^4.17.1",
+    "morgan": "^1.10.0",
     "nodemon": "^2.0.7"
+  },
+  "devDependencies": {
+    "assert": "^2.0.0",
+    "chai": "^4.2.0",
+    "mocha": "^8.2.1",
+    "sinon": "^9.2.3",
+    "supertest": "^6.1.1"
   }
 }
