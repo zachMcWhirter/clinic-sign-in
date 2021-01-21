@@ -1,12 +1,13 @@
-"use strict";
+'use strict';
 
-const app = require("express")();
+const app = require('express')();
 const bodyParser = require('body-parser');
 const morgan = require('morgan');
-const addRoutes = require("./api/routes");
+const addRoutes = require('./api/routes');
+const logger = require('./lib/logger');
 
 
-const PORT = process.env.PORT || "10020";
+const PORT = process.env.PORT || '10020';
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -18,7 +19,7 @@ addRoutes(app);
 // });
 
 app.listen(PORT, function () {
-  console.log(`app listening on port ${PORT}`);
+  logger.always.log(`app listening on port ${PORT}`);
 });
 
 module.exports = app;
