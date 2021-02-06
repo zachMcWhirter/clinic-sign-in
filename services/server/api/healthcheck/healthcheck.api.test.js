@@ -9,7 +9,7 @@ describe('The Healthchecker', function () {
       .expect(200)
       .end(function (err, res) {
         if (err) return done(err);
-        assert.equal(res.body.hello, 'hello from inside healthcheck');
+        assert.equal(res.body.hello, 'hello');
         done();
       });
   });
