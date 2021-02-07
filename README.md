@@ -6,8 +6,8 @@ This is a template for creating a monorepo with a React frontend and a Node.js b
 
 | Environment | Branch  | URL                                             | CI                                                                                                                                                                                                                      | Documentation |
 | ----------- | ------- | ----------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------- |
-| Development | develop | https://clinic-sign-in-staging.herokuapp.com | [![CircleCI](https://circleci.com/github/zachMcWhirter/clinic-sign-in/develop.svg?style=svg&circle-token=080ef5d623a5bc07e2b4e40f61caae84cf137397)](https://circleci.com/github/zachMcWhirter/clinic-sign-in/tree/develop) |
-| Production  | master  | https://clinic-sign-in.herokuapp.com         | [![CircleCI](https://circleci.com/github/zachMcWhirter/clinic-sign-in/tree/master.svg?style=svg&circle-token=080ef5d623a5bc07e2b4e40f61caae84cf137397)](https://circleci.com/github/zachMcWhirter/clinic-sign-in/tree/master)   |  
+| Development | develop | https://clinic-sign-in-staging.herokuapp.com | [![CircleCI](https://circleci.com/gh/zachMcWhirter/clinic-sign-in/develop.svg?style=svg&circle-token=080ef5d623a5bc07e2b4e40f61caae84cf137397)](https://circleci.com/gh/zachMcWhirter/clinic-sign-in/tree/develop) |
+| Production  | master  | https://clinic-sign-in.herokuapp.com         | [![CircleCI](https://circleci.com/gh/zachMcWhirter/clinic-sign-in/tree/master.svg?style=svg&circle-token=080ef5d623a5bc07e2b4e40f61caae84cf137397)](https://circleci.com/gh/zachMcWhirter/clinic-sign-in/tree/master)   |  
 
 ## Installation
 
