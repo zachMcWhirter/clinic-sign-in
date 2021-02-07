@@ -1,5 +1,5 @@
 function helloWorld(req, res) {
-  res.status(200).json({ hello: 'hello from inside healthcheck' });
+  res.status(200).json({ hello: 'hello' });
 }
   
 module.exports = {
